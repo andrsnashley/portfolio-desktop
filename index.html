@@ -2,7 +2,7 @@
 <html lang = "en">
     <head>
         <meta charset="utf-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/html5reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Space+Grotesk:wght@300;500&display=swap" rel="stylesheet">
@@ -13,62 +13,52 @@
         <title>Ashley Anderson</title>
     </head>
     <body>
-        <!-- <a class="main_page" href="/index.html">
-            <img class="logo" src="/img/signature.png" alt="MC3 Logo">
-        </a> -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a id="title" class="navbar-brand" href="index.html">Ashley Anderson</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="uploads/Anderson.Ashley.Resume.pdf">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#portfolio_container">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a id="title" class="navbar-brand" href="index.html">Ashley Anderson</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link link-on" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="uploads/Anderson.Ashley.Resume.pdf">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="description">
+                <div class="paragraph">Hello! My name is Ashley, and I'm a Computer Science & Information Analysis major at the University of Michigan.</div>
+                <div class="paragraph">Follow my journey in programming and studying the intersection of humans and technology!</div>
+                <div class="contact"><a class="linkedin" href="https://www.linkedin.com/in/ashleylanderson/">LinkedIn</a> / andrsn@umich.edu</div>
             </div>
-        </nav>
-        <div class="description">
-            Hello! My name is Ashley, and I'm a Computer Science & Information Analysis major at the University of Michigan.
-            <div class="paragraph">
-                Follow my journey in programming and studying the intersection of humans and technology!
+            <h1>Places I've Been</h1>
+            <div id="places_container">
+                <div><div class="job_title">Michigan Collaborative Care</div>
+                    Web Development Intern
+                </div>
+                <div><div class="job_title">Learning A-Z</div>
+                    Software Engineering Intern
+                </div>
+                <div><div class="job_title">UM, Department of Psychology</div>
+                    Project Manager
+                </div>
+                <div><div class="job_title">Intel SRC</div>
+                    Research Fellow
+                </div>
             </div>
-        </div>
-        <div class="contact"><a class="linkedin" href="https://www.linkedin.com/in/ashleylanderson/">LinkedIn</a> / andrsn@umich.edu</div>
-        <div id="portfolio_container">
-            <div><img id="MC3_logo" src="https://mc3.depressioncenter.org/wp-content/uploads/2020/06/MC3-logo-RGB_color.png" alt="MC3 Logo">
-                <div class="job_title">Web Development Intern</div>
-                Coming soon!
-            </div>
-            <div><img id="swe_logo" src="https://coe.northeastern.edu/wp-content/uploads/swe.png" alt="SWE Team Tech">
-                <div class="job_title">Co-Director</div>
-                Coming soon!
-            </div>
-            <div>
-                <img id="laz_logo" src="https://www.learninga-z.com/assets/img/LAZ_clg_logo-rgb.png" alt="Learning A-Z">
-                <div class="job_title">Software Engineering Intern</div>
-                A Software Engineering Internship at Learning A-Z focused on designing interactive classroom pages for the Raz-Kids product.
-                Built custom components that would incentivize students to create avatars, increasing user engagement with the avatar builder page.
-                Created new login pages and class charts as well as adding extra settings for teachers.
-            </div>
-            <div><img id="um_logo" src="https://lsa.umich.edu/content/michigan-lsa/psych/en/about/staff-guiding-principles0/jcr:content/par/responsive_columns_1333478274/col1/image_320176597.transform/xbigfree/image.jpg" alt="University of Michigan">
-                <div class="job_title">Project Manager</div>
-                A project I managed that focused on studying clusters in social networks. In this project, I researched how social network algorithms filter information 
-                for individuals and studied how users form clusters with others that share similar beliefs. I helped with coding a simple social network where users had 
-                the capabilities to post and alter their network (adding and removing friends). I programmed different social network structures and network updating options 
-                to test. I also collected and analyzed data through R and quantified data from participants.
-            </div>
-            <div><img id="intel_logo" src="https://www.src.org/web/img/SRC_logo_blue.png" alt="Intel SRC">
-                <div class="job_title">Research Fellow</div>
-                I worked in a team that mined data from electronic textbook log files to study student behavior on computing problems and tests. We evaluated the success of instructional 
-                scaffolding mediated by technology and how electronic resources can better cater to each student’s needs.
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
+            <div></div>
+            <br>
+            <br>
+            <br>
+        </main>
+        <footer>
+            Copyright &copy; 2021 Ashley Anderson
+            <br>
+        </footer>
     </body>
 </html>

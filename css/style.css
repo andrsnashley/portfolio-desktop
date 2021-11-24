@@ -5,15 +5,22 @@ body {
 
 .navbar {
     width: 100%;
-    float: right;
     background-color: whites;
 }
 
 #title {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500px;
     color: #120402;
+}
+
+h1 {
+    margin-left: 40px;
+    padding-top: 50px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #9867C5;
+    font-size: 40px;
 }
 
 .nav-item {
@@ -30,34 +37,53 @@ body {
     padding: 12px 14px;
 }
 
+.link-on {
+    text-decoration: underline;
+}
+
 .description {
-    margin-left: 70px;
-    margin-right: 50px;
-    padding-top: 120px;
     font-family: 'Inconsolata', sans-serif;
-    font-size: 30px;
+    background-image: url("/img/background.jpeg");
+    background-size: cover;
 }
 
 .contact {
     padding-top: 50px;
-    margin-left: 70px;
+    margin-left: 50px;
     font-family: 'Inconsolata', sans-serif;
     color: black;
+    font-weight: bold;
+    padding-bottom: 30px;
 }
 
 .linkedin {
     color: black;
 }
 
-#portfolio_container {
-    padding-top: 80px;
-    margin-left: 70px;
+#places_container {
+    padding-top: 50px;
+    margin-left: 40px;
     margin-right: 70px;
     font-family: 'Inconsolata', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    display: grid;
+    grid-auto-rows: auto auto auto auto;
+    grid-row-gap: 50px;
+    width: 80%;
+}
+
+#portfolio_container {
+    padding-top: 50px;
+    margin-left: 40px;
+    margin-right: 70px;
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
     display: grid;
     grid-auto-rows: auto auto auto auto auto;
     grid-row-gap: 100px;
+    width: 80%;
 }
 
 .job_title {
@@ -68,43 +94,54 @@ body {
 }
 
 .paragraph {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 25px;
 }
 
 #MC3_logo {
-    max-width: 260px;
+    max-width: 160px;
 }
 
 #swe_logo {
-    max-width: 270px;
+    max-width: 170px;
 }
 
 #laz_logo {
-    max-width: 350px;
+    max-width: 250px;
 }
 
 #um_logo {
-    max-width: 400px;
+    max-width: 300px;
 }
 
 #intel_logo {
-    max-width: 300px;
+    max-width: 200px;
 }
 
 .about_me {
     margin-left: 20px;
     margin-right: 20px;
-    padding-top: 120px;
-    font-family: 'Inconsolata', sans-serif;
-    font-size: 20px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
-.purple_title {
+#pfp {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.black_title {
     font-family: 'Space Grotesk', sans-serif;
-    color: #2E31FF;
-    font-size: 30px;
-    
+    color: #301934;
+    font-size: 40px;
+    margin-left: 40px;
 }
 
 .contact_me {
@@ -115,11 +152,18 @@ body {
     font-size: 20px;
 }
 
+.row {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+    flex: 25%;
+    width: 150px;
 }
   
 div.gallery:hover {
@@ -135,3 +179,13 @@ div.desc {
     padding: 15px;
     text-align: center;
 }
+
+footer {
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+/* @media screen and (min-width: 700px) {
+
+} */
