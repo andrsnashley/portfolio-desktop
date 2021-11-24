@@ -23,6 +23,17 @@ h1 {
     font-size: 40px;
 }
 
+.skip {
+    background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top: -40px;
+}
+
 .nav-item {
     padding-left: 10px;
     padding-right: 10px;
