@@ -13,7 +13,7 @@
         <title>Ashley Anderson</title>
     </head>
     <body>
-        <div class="skip"><a href="#main">Skip to Main Content</a></div>
+        <div class="skip"><a href="#main" id="skip_text">Skip to Main Content</a></div>
         <header>
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a id="title" class="navbar-brand" href="index.html">Ashley Anderson</a>
@@ -22,7 +22,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link link-on" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link link-on" href="index.html"><strong>Home</strong></a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="uploads/Anderson.Ashley.Resume.pdf">Resume</a></li>
                         <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
@@ -32,27 +32,32 @@
             </nav>
         </header>
         <main>
-            <div id="main" class="description">
-                <div class="paragraph">Hello! My name is Ashley, and I'm a Computer Science & Information Analysis major at the University of Michigan.</div>
-                <div class="paragraph">Follow my journey in programming and studying the intersection of humans and technology!</div>
-                <div class="contact"><a class="linkedin" href="https://www.linkedin.com/in/ashleylanderson/">LinkedIn</a> / andrsn@umich.edu</div>
+            <div id="main" class="description index_flex">
+                <div>
+                    <div class="paragraph">Hello! My name is Ashley, and I'm a Computer Science & Information Analysis major at the University of Michigan.</div>
+                    <div class="paragraph">Follow my journey in programming and studying the intersection of humans and technology!</div>
+                    <div class="contact"><a class="linkedin" href="https://www.linkedin.com/in/ashleylanderson/">LinkedIn</a> / andrsn@umich.edu</div>
+                </div>
+                <div><img id="index_image" src="img/251476F2-4431-4300-895F-F7C73804D524_1_105_c.jpeg" alt="Picture of Me!"></div> 
             </div>
             <h1>Places I've Been</h1>
-            <div id="places_container">
-                <div><div class="job_title">Michigan Collaborative Care</div>
-                    Web Development Intern
-                </div>
-                <div><div class="job_title">Learning A-Z</div>
-                    Software Engineering Intern
-                </div>
-                <div><div class="job_title">UM, Department of Psychology</div>
-                    Project Manager
-                </div>
-                <div><div class="job_title">Intel SRC</div>
-                    Research Fellow
+            <div class="places_been">
+                <img class="travel_img no_transition" src="img/2g142ge.png" alt="Traveling Girl">
+                <div id="places_container">
+                    <div><div class="job_title">Michigan Collaborative Care</div>
+                        Web Development Intern
+                    </div>
+                    <div><div class="job_title">Learning A-Z</div>
+                        Software Engineering Intern
+                    </div>
+                    <div><div class="job_title">UM, Department of Psychology</div>
+                        Project Manager
+                    </div>
+                    <div><div class="job_title">Intel SRC</div>
+                        Research Fellow
+                    </div>
                 </div>
             </div>
-            <div></div>
             <br>
             <br>
             <br>

@@ -1,3 +1,4 @@
+@-webkit-keyframes flicker-1{0%,100%{opacity:1}41.99%{opacity:1}42%{opacity:0}43%{opacity:0}43.01%{opacity:1}47.99%{opacity:1}48%{opacity:0}49%{opacity:0}49.01%{opacity:1}}@keyframes flicker-1{0%,100%{opacity:1}41.99%{opacity:1}42%{opacity:0}43%{opacity:0}43.01%{opacity:1}47.99%{opacity:1}48%{opacity:0}49%{opacity:0}49.01%{opacity:1}}
 
 body {
     background-color: #F6F3F7;
@@ -19,19 +20,30 @@ h1 {
     margin-left: 40px;
     padding-top: 50px;
     font-family: 'Space Grotesk', sans-serif;
-    color: #9867C5;
+    color: black;
     font-size: 40px;
 }
 
 .skip {
-    background: white;
-  left: 0;
-  padding: 6px;
-  -webkit-transition: top 1s ease-out;
-  transition: top 1s ease-out;
-  z-index: 1;
-  position: absolute;
-  top: -40px;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    top: -40px;
+    display: block;
+    position: absolute;
+    background-color: white;
+}
+
+.skip a:focus-visible {
+    top: 0px;
+    border: 2px solid;
+    position: absolute;
+}
+
+#skip_text {
+    color: black;
 }
 
 .nav-item {
@@ -54,8 +66,11 @@ h1 {
 
 .description {
     font-family: 'Inconsolata', sans-serif;
-    background-image: url("/img/background.jpeg");
+    background-image: url("../img/background.jpeg");
     background-size: cover;
+    height: 500px;
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center; /* Parallax effect */
 }
 
 .contact {
@@ -69,6 +84,10 @@ h1 {
 
 .linkedin {
     color: black;
+}
+
+#index_image {
+    display: none;
 }
 
 #places_container {
@@ -87,14 +106,14 @@ h1 {
 #portfolio_container {
     padding-top: 50px;
     margin-left: 40px;
-    margin-right: 70px;
+    margin-right: 40px;
     font-family: 'Inconsolata', sans-serif;
     font-size: 25px;
     font-weight: bold;
     display: grid;
     grid-auto-rows: auto auto auto auto auto;
     grid-row-gap: 100px;
-    width: 80%;
+    width: 90%;
 }
 
 .job_title {
@@ -144,8 +163,10 @@ h1 {
 
 #pfp {
     width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.about_me_desktop {
+    margin:auto;
 }
 
 .black_title {
@@ -173,8 +194,7 @@ h1 {
 div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
-    flex: 25%;
-    width: 150px;
+    width: 220px;
 }
   
 div.gallery:hover {
@@ -197,6 +217,89 @@ footer {
     padding-left: 20px;
 }
 
-/* @media screen and (min-width: 700px) {
+.travel_img {
+	display: none;
+}
 
-} */
+
+@media screen and (min-width: 800px) {
+    #index_image {
+        display: block;
+        margin: auto;
+        width: 80%;
+    }
+
+    .index_flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #portfolio_container {
+        grid-template-columns: repeat(7, 1fr)
+    }
+
+    #MC3 {
+        grid-column: 1 / span 4;
+    }
+    #swe {
+        grid-column: 4 / span 4;
+    }
+    #laz {
+        grid-column: 1 / span 4;
+    }
+    #um {
+        grid-column: 4 / span 4;
+    }
+    #intel {
+        grid-column: 1 / span 4;
+    }
+
+    .places_been {
+        display: flex;
+
+    }
+
+    .travel_img {
+        display: block;
+        padding-top: 50px;
+        -webkit-animation: flicker-1 2s linear infinite both;
+                animation: flicker-1 2s linear infinite both;
+    }
+
+    #pfp {
+        margin: 5%;
+    }
+    
+}
+
+@media screen and (min-width: 950px) {
+
+    #about_me_desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #pfp {
+        width: 50%;
+        height: fit-content;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+
+    .no_transition { 
+        -webkit-animation: none !important;
+                animation: none !important;
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -o-transition: none !important;
+        -ms-transition: none !important;
+        transition: none !important;
+    }
+
+    .description {
+        background-attachment: initial;
+    }
+}
